@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.array;
+
+/**
+ *
+ * @author HPLap
+ */
+public class ARRAY {
+        public class LargestInArray {
+    public static void main(String[] args, int[] number) {
+         int largest;
+        largest = findlargest(number);
+     System.out.printIn("The largest element is: " + largest);
+     }
+        public static int
+      findlargest(int[] array) {
+        int max = array[0];
+            for (int num : array) {
+                if (num > max) {
+                    max = num;
+            }
+        }
+
+       return max;
+    }
+    }
+}
