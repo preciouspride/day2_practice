@@ -5,4 +5,3 @@ kelly = [20, 'Kelly', False, 52.4]
 students.append(kelly)
 kelly_age =students [-1][0]
 print(kelly_age)
-       
