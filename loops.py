@@ -44,5 +44,6 @@ class_participants = ['Kaba', 'Kelly', 'Louis', 'Mofor']
 # 2: "Even"
 # 3: "Odd":
 # 4: "Even"
+
 for num in positive_numbers:
     print(num)
