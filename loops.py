@@ -45,5 +45,9 @@ class_participants = ['Kaba', 'Kelly', 'Louis', 'Mofor']
 # 3: "Odd":
 # 4: "Even"
 
+# F Strings AND format => Both ways of formatting output of code
+
 for num in positive_numbers:
-    print(num)
+    print(f'{num}: Even/Odd')
+    print('{}: Even/Odd')
+
