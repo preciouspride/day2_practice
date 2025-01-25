@@ -1,6 +1,9 @@
 # 2 Types of Loops:
 
-positive_numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for & while  loops
+
+positive_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+len(positive_numbers)
 # print(len(positive_numbers))
 
 ##  DETERMINISTIC VS NON-DETERMINISTIC
@@ -10,7 +13,7 @@ class_participants = ['Kaba', 'Kelly', 'Louis', 'Mofor']
 # for loop vs while
 #ITERATE / ITERATION / ITERABLES
 
-# for item in a container:
+# for (item/variable name) in a container/collection:
     # code block
     # code block
     # code block
@@ -47,7 +50,12 @@ class_participants = ['Kaba', 'Kelly', 'Louis', 'Mofor']
 
 # F Strings AND format => Both ways of formatting output of code
 
-for num in positive_numbers:
-    print(f'{num}: Even/Odd')
-    print('{}: Even/Odd')
+# for num in positive_numbers:
+#     if num % 2 == 0:
+#         print(f'{num} is Even')
+#     else:
+#         print(f'{num} is Odd')
 
+
+for i in range(11):
+    print(i)
