@@ -17,3 +17,5 @@ for num in positive_numbers:
     if num % 2 == 0:
         print('{num} is Even')
         break
+
+print(len(positive_numbers))
