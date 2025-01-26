@@ -74,3 +74,6 @@ print(temp_in_abidjan_in_Fah)
 # 1. Create three functions that mimick subtraction, multiplication and division +> All take two parameters
 # 2. Create a function that takes a number and returns the square of the number => Take one parameter
 # 3. Create a function that takes a number, and checks if the number is even or odd. If the number is even, return 1. If the number is odd, return 0
+
+## Bonus Assignment:
+# Create a function that takes three numbers, and returns the number with the highest ABSOLUTE value
