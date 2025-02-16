@@ -11,7 +11,7 @@ person = {"name": "Kaba", "age": 25}
 # print(person)
 # print(person["name"])
 
-person["age"] = 20
+print(person["age"])
 
 # print(person)
 
