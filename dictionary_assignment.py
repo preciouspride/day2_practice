@@ -1,3 +1,5 @@
+from pprint import pprint as pp
+
 students = {
     "1001": {
         "name": "Alice Ndukong",
@@ -96,6 +98,7 @@ students = {
 # For example the output should be like: 
 # Elvis Atem: math: C, science: B-, history: A-
 # Diana Ekema math: A, science: B=, history: C+
-#
-#
-#
+
+for k, v in students.items():
+    print(f'Key => {k}')
+    print(f'Name & Subjects => {v["name"]}: {v["grades"]}')
