@@ -1,5 +1,3 @@
-from pprint import pprint as pp
-
 students = {
     "1001": {
         "grades": {
@@ -78,12 +76,3 @@ students = {
 # For example the output should be like: 
 # math: C, science: B-, history: A-
 # math: A, science: B=, history: C+
-
-# for k, v in students.items():
-#     print(f'Key => {k}')
-#     print(f'Name & Subjects => {v["name"]}: {v["grades"]}')
-
-for _id, student in students.items():
-    name = student["name"]
-    grades = ", ".join(f"{subject}: {details['grade']}" for subject, details in student["grades"].items())
-    print(f"{name}: {grades}")
