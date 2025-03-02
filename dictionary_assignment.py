@@ -83,7 +83,13 @@ students = {
 #     print(f'Key => {k}')
 #     print(f'Name & Subjects => {v["name"]}: {v["grades"]}')
 
-for _id, student in students.items():
-    name = student["name"]
-    grades = ", ".join(f"{subject}: {details['grade']}" for subject, details in student["grades"].items())
-    print(f"{name}: {grades}")
+# for _id, student in students.items():
+#     name = student["name"]
+#     grades = ", ".join(f"{subject}: {details['grade']}" for subject, details in student["grades"].items())
+#     print(f"{name}: {grades}")
+
+for student_grade in students.values():
+    for subject in student_grade.values():
+        for subj, result in subject.items():
+            print(f"{subj}: {result["grade"]}", end=" ")
+        print("\n")
