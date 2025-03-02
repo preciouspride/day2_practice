@@ -92,4 +92,4 @@ for student_grade in students.values():
     for subject in student_grade.values():
         for subj, result in subject.items():
             print(f"{subj}: {result["grade"]}", end=" ")
-        print("\n")
+        print("\n", end="")
