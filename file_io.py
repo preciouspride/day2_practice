@@ -8,12 +8,51 @@
 #   iii. => Open in append only mode: a
 #   iv  => Open in read and write mode
 
+## DRY => Don't Repeat Yourself
+
 # Buffering
 
 #How to open a file.
 # The function to open a file is called open. It takes the path to the file + the mode to open with as arguments
-file = open('exchange.csv', 'a')
-print(file.closed)
-print(file.mode)
-file.close()
-print(file.closed)
+# try:
+#     file = open('exchange.csv', 'r+')
+
+#     # print("Is file closed: ", file.closed)
+#     # print("What is the mode the file is open with: ", file.mode)
+#     # print("Is file readable: ", file.readable())
+#     # print("Is file writable: ", file.writable())
+#     # file.close()
+#     # print("Is file closed: ", file.closed)
+
+
+#     #readlines is a method on the file handler that reads all the content of the file and stores it in memory
+#     # content = file.readlines()
+#     # file.close()
+
+#     # for line in content:
+#     #     print(line, end="")
+
+
+#     heading = next(file)
+#     print(heading, end="")
+#     for _ in range(10):
+#         print(next(file), end="")
+#         raise(ValueError)
+# except ValueError:
+#     print("There was an error")
+
+# finally:
+#     print("Closing the file right now!!")
+#     file.close()
+#     print("File is now closed: ", file.closed)
+
+
+## An even easier way to ensure that the files get closed after using them is by using a Context Manager
+# To work with a context manager, you enter a context manager using a "with" statement.
+
+with open('exchange.csv') as file:
+    heading = next(file)
+    print(heading, end="")
+    for _ in range(10):
+        print(next(file), end="")
+## Continue work
