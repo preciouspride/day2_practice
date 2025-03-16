@@ -50,9 +50,17 @@
 ## An even easier way to ensure that the files get closed after using them is by using a Context Manager
 # To work with a context manager, you enter a context manager using a "with" statement.
 
+# with open('exchange.csv') as file:
+#     heading = next(file)
+#     print(heading, end="")
+#     for _ in range(10):
+#         print(next(file), end="")
+## Continue work
+
+# Use a context manager to open the file in read mode and print out the first 10 lines
+
 with open('exchange.csv') as file:
     heading = next(file)
     print(heading, end="")
     for _ in range(10):
         print(next(file), end="")
-## Continue work
