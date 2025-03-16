@@ -59,8 +59,19 @@
 
 # Use a context manager to open the file in read mode and print out the first 10 lines
 
-with open('exchange.csv') as file:
-    heading = next(file)
-    print(heading, end="")
-    for _ in range(10):
-        print(next(file), end="")
+# with open('exchange.csv') as file:
+#     heading = next(file)
+#     print(heading, end="")
+#     for _ in range(10):
+#         print(next(file), end="")
+
+
+lines = ["This is a test file", "This is another and different test file", "This is a third test file"]
+
+# with open('test1.txt', 'w') as f:
+#     # f.writelines('\n'.join(lines))
+#     for line in lines:
+#         f.write(line + '\n')
+
+with open('test2.txt', 'a') as f:
+    f.writelines(["This is a line added with append\n", "This is a second added with append\n", "This is the last line"])
