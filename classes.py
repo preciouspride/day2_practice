@@ -20,9 +20,9 @@
 class Person:
     '''This is called a DOCSTRING which is an documentation of a class'''
 
-    def __init__(self, fname, lname):
-        self.first_name = fname
-        self.last_name = lname
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
 
 kaba = Person("Emmanuel", "Kaba")
 kaba.age = 20
