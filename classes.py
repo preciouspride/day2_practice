@@ -12,6 +12,7 @@
 ## We create a class using the "class" keyword followed by the class name
 
 ## An object has attributes which form the state
+## An objest has behavior => Methods
 
 ## Classes have an __init__ method that is called to initialize an object that is created from this class 
 ## Double underscore => dunder
@@ -20,14 +21,14 @@
 class Person:
     '''This is called a DOCSTRING which is an documentation of a class'''
 
-    def __init__(self, first_name, last_name):
+    def __init__(self, first_name, last_name, age, height, weight):
         self.first_name = first_name
         self.last_name = last_name
+        self.age = age
+        self.height = height
+        self.weight = weight
 
-kaba = Person("Emmanuel", "Kaba")
-kaba.age = 20
-kaba.height = 175
-kaba.weight = 70
+kaba = Person("Emmanuel", "Kaba", 20, 175, 70)
 
 print("This is Kaba Person")
 print(kaba.first_name)
@@ -36,10 +37,7 @@ print(kaba.age)
 print(kaba.height)
 print(kaba.weight)
 
-louis = Person("Louis", "Ndango")
-louis.age = 30
-louis.height = 175
-louis.weight = 185
+louis = Person("Louis", "Ndango", 30, 175, 185)
 print("\n")
 print("This is Louis Person")
 print(louis.first_name)
