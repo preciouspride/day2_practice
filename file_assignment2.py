@@ -10,3 +10,17 @@
 #   with open('file2', 'w') as f2:
 #       var = f1.read()
 #       f2.write(var)
+
+file_name = "exchange.csv"
+
+with open("exchange.csv") as input_file:
+    with open("rates.txt", "a") as output_file:
+            headers = next(input_file)
+            for line in input_file:
+                exchange = line.split(',')[1]
+                exchange = exchange.strip()
+                try:
+                    exchange = float(exchange)
+                except ValueError:
+                    exchange = 0
+                output_file.write(str(f'{exchange:.3f}')+"\n")

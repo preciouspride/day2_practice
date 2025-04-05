@@ -16,4 +16,7 @@ with open(file_name) as file:
             exchange = 0
         # exchange = round(exchange)
         # print("{:.2f}".format(exchange))
-        print(f'{exchange:.2f}')
+        # print(f'{exchange:.2f}')
+        with open('rates.txt', 'a') as output:
+            output.write(str(exchange))
+            output.write("\n")
