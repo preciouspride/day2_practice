@@ -23,4 +23,5 @@ with open("exchange.csv") as input_file:
                     exchange = float(exchange)
                 except ValueError:
                     exchange = 0
+                # Write the exchange to the output file
                 output_file.write(str(f'{exchange:.3f}')+"\n")
