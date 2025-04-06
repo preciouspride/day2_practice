@@ -1,6 +1,6 @@
-count = 0
-total = 0
-for number in range(1, 21):
-    count = count + 1
-    total = total + number
-print(f"count is: {count} and total is {total}")
+# # INSTANCE - An instance of a class is the object created from that class. Creating an object from a class is called instantiating the class
+num = int(4)
+# text = string(4)
+# num_float = float(4.0)
+
+print(num)
