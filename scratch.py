@@ -4,3 +4,8 @@ num = int(4)
 # num_float = float(4.0)
 
 print(num)
+
+
+
+### DRY principle
+### => Don't Repeat Yourself

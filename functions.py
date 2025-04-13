@@ -64,7 +64,7 @@
 ## Fahrenheit => (celsius * 9/5) + 32
 
 def convert_celcius_to_fahrenheit(celcius):
-    value_in_fah = (celcius * 9/5 ) + 32
+    value_in_fah = (celcius * 9/5.2 ) + 32
     return value_in_fah
 temp_in_abidjan_in_Fah = convert_celcius_to_fahrenheit(32)
 print(temp_in_abidjan_in_Fah)
